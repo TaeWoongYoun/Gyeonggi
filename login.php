@@ -14,9 +14,14 @@
                 <p><input type="text" name="userid"  placeholder="아이디"> </p>
                 <p><input type="password" name="userpw" placeholder="비밀번호"></p>
                 <p class="login_btn_area">
-                    <button type="submit" class="join_submit">로그인</button>
+                    <button type='button' class="join_submit">로그인</button>
                     <button type="reset">취소</button>
                 </p>
+
+                <div class="captcha">
+                    <img src="1.jpg" alt="">
+                    <button type="submit">완료</button>
+                </div>
             </form> 
         </div>
     </div>

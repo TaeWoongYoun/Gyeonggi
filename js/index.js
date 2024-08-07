@@ -46,4 +46,8 @@ document.addEventListener("DOMContentLoaded", function(){
             return false;
         }
     })
+
+    document.querySelector('.join_submit').addEventListener('click', function(){
+        document.querySelector('.captcha').style.display = 'block';
+    })
 })
