@@ -383,10 +383,10 @@ footer{
 
 .reservation_card{
     width: 250px;
-    height: 200px;
     background-color: #fff;
     border: 1px solid black;
-    margin: 18px;
+    margin: 8px;
+    padding: 10px;
 }
 
 .reservation_card h4{
@@ -395,4 +395,12 @@ footer{
 
 .reservation_card p{
     padding: 5px;
+}
+
+.reservation_card button{
+    padding: 5px 10px;
+    border: 1px solid black;
+    background-color: #fff;
+    float: right;
+    margin-right: 10px;
 }

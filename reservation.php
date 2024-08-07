@@ -12,10 +12,9 @@
             if ($id == 'admin') { ?>
                 <!-- 예약하기 관리자 페이지 -->
                 <?php require('./reservation/reservation_admin.php')?>
-            <?php } elseif ($id == 'guide1') { ?>
-2
-            <?php } elseif ($id == 'guide2') { ?>
-3
+            <?php } elseif ($id == 'guide1' || $id == 'guide2') { ?>
+                <!-- 예약하기 해설가 페이지 -->
+                <?php require('./reservation/reservation_guide.php')?>
             <?php } else { ?>
 4
             <?php } ?>
