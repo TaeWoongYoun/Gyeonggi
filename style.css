@@ -123,6 +123,14 @@ nav{
     cursor: pointer;
 }
 /* 헤더 영역 */
+/* 컨텐츠 */
+.content{
+    width: 100%;
+    height: 1000px;
+    background-color: aliceblue;
+}
+/* 컨텐츠 */
+
 /* 회원가입 모달 */
 .join_area{
     position: relative;
