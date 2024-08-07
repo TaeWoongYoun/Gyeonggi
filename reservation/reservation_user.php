@@ -20,7 +20,7 @@
 <div class="reservation_modal">
     <h2>예약하기</h2>
     <form action="reservationUser.php" method="post">
-        <input type="hidden" name="id" value="<?php $id?>">
+        <input type="hidden" name="id" value="<?=$_GET['id']?>">
         <input type="text" name="username" id="username" placeholder="이름"> <br> 
         <input type="text" name="phone" id="phone" placeholder="전화번호"> <br>
         <input type="email" name="email" id="email" placeholder="이메일"> <br>

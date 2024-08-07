@@ -4,11 +4,20 @@
     $course = mysqli_real_escape_string($conn, $_POST['course']);
     $date = mysqli_real_escape_string($conn, $_POST['date']);
     $time = mysqli_real_escape_string($conn, $_POST['time']);
-    $sql = "INSERT INTO reservation (course, date, time) VALUES ('$course', '$date', '$time')";
-    mysqli_query($conn, $sql);
-?>
+    $check_sql = "SELECT * FROM reservation WHERE course = '$course' AND date = '$date' AND time = '$time'";
+    $result = mysqli_query($conn, $check_sql);
 
-<script>
-    alert("코스등록이 완료되었습니다.");
-    location.href = 'reservation.php?id=admin';
-</script>
+    if(mysqli_num_rows($result) > 0){
+        echo "<script>
+                alert('중복된 날짜입니다');
+                history.back();    
+            </script>";
+    } else {
+        $sql = "INSERT INTO reservation (course, date, time) VALUES ('$course', '$date', '$time')";
+        mysqli_query($conn, $sql);
+        echo "<script>
+                alert('코스가 등록되었습니다');
+                location.href = 'reservation.php?id=admin';    
+            </script>";
+    }
+?>
