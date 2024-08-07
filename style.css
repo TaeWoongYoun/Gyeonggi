@@ -340,9 +340,13 @@ footer{
     padding: 10px;
 }
 
+.reservationForm{
+    display: flex;
+    align-items: center;
+}
+
 .reservationForm div{
-    width: 250px;
-    height: 40px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -354,4 +358,41 @@ footer{
 
 .reservationForm input{
     padding: 10px;
+}
+
+.reservationForm button{
+    width: 70px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.reservationForm button:hover{
+    background-color: #111;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.reservation_card_area{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reservation_card{
+    width: 250px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid black;
+    margin: 18px;
+}
+
+.reservation_card h4{
+    padding: 5px;
+}
+
+.reservation_card p{
+    padding: 5px;
 }
