@@ -11,11 +11,12 @@
         <div class="join_modal">
             <h1>회원가입</h1>
             <form action="joinProcess.php" method="post">
-                <p><input type="text" name="userid" id="userid" placeholder="아이디"> <button type="button">중복확인</button></p>
+                <p><input type="text" name="userid" id="userid" placeholder="아이디"> <button type="button" id="check_id">중복확인</button></p>
+                <input type="hidden" name="ok" id="ok" value="0">
                 <p><input type="text" name="name" id="name" placeholder="이름"></p>
-                <p><input type="text" name="userpw" id="userpw" placeholder="비밀번호"></p>
-                <p>
-                    <button type="submit">회원가입</button>
+                <p><input type="password" name="userpw" id="userpw" placeholder="비밀번호"></p>
+                <p class="join_btn_area">
+                    <button type="submit" class="join_submit">회원가입</button>
                     <a href="index.php"><button type="reset">취소</button></a>
                 </p>
             </form> 
