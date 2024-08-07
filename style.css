@@ -404,3 +404,42 @@ footer{
     float: right;
     margin-right: 10px;
 }
+
+.reservation_modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #444;
+    display: none;
+}
+
+.reservation_modal h2{
+    text-align: center;
+    line-height: 50px;
+}
+
+.reservation_modal input{
+    width: 290px;
+    height: 40px;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.modal_btn_area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_btn_area button{
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: #fff;
+}
