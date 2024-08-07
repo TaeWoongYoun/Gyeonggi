@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php $id = mysqli_real_escape_string($conn, $_GET['id'])?>
     <!-- 헤더 영역 -->
     <header>
         <div class="logo">달빛기행축제</div>
@@ -29,7 +30,7 @@
                         <li><a href="#">- 퀴즈 이벤트 참가</a></li>
                     </ul>
                 </li>
-                <li><a href="#">예약하기</a></li>
+                <li><a href="reservation.php?id=<?=$id?>">예약하기</a></li>
                 <li><a href="#">마이페이지</a></li>
             </ul>
         </nav>

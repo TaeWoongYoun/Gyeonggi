@@ -320,3 +320,38 @@ footer{
     font-size: 44px;
 }
 /* 푸터 영역 */
+
+.reservation_area{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservation{
+    width: 1440px;
+    height: 100%;
+    background-color: #eee;
+}
+
+.reservation h1{
+    float: right;
+    padding: 10px;
+}
+
+.reservationForm div{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reservationForm select{
+    padding: 10px;
+}
+
+.reservationForm input{
+    padding: 10px;
+}

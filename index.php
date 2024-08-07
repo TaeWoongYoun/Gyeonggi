@@ -1,6 +1,4 @@
 <?php require('머리부터발끝/header.php')?>
-
-
     <!-- 컨텐츠 -->
     <div class="content">
         
